@@ -1,0 +1,72 @@
+#review {
+	padding: 20px 0;
+	font-size: 20px;
+	line-height: 20px;
+}
+#review-title {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 36px;
+}
+#review-stars {
+	text-align: right;
+}
+.buttonlover {
+	margin-top: 20px;
+}
+.player {
+	text-align: center;
+}
+.player .name {
+	font-size: 20px;
+	line-height: 20px;
+	padding: 10px;
+}
+.player .name.ready {
+	-moz-box-shadow: 0 0 10px #0C0;
+	-webkit-box-shadow: 0 0 10px #0C0;
+	box-shadow: 0 0 10px #0C0;
+	background: #0C0;
+}
+.player .score {
+	font-size: 50px;
+	line-height: 50px;
+}
+#answering {
+	text-align: center;
+}
+#answering .btn-group {
+	width: 260px;
+	margin: 10px auto;
+}
+#admin {
+	margin-top: 10px;
+}
+.modal {
+	color: #000;
+	text-shadow: none;
+}
+.answer {
+	border: 1px solid #000;
+	min-height: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+}
+
+body {
+    background-color: #401e08;
+    background-image: url("../backing.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-shadow:2px 2px 1px #000;
+}
+
+h1 {
+    color:#fff;
+    text-shadow:5px 5px 3px #000;
+    font-size: 36px;
+    font-family: 'Gorditas', Georgia, serif;
+    text-align: center;
+}

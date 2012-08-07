@@ -1,0 +1,8 @@
+{
+	"name":"50shadesordiamond",
+	"version":"0.0.1",
+	"dependencies":{
+		"socket.io":"0.9.9",
+		"node-static":"0.6.0"
+	}
+}

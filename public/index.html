@@ -1,0 +1,115 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Diamond Club or 50 Shades of Grey</title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width">
+  <link href='http://fonts.googleapis.com/css?family=Gorditas' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/css/bootstrap-combined.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+	<div class="container" role="main">
+		<header>
+			<h1>The Diamond Club &#13;<br />&#10; or &#13;<br />&#10; 50 Shades of Grey</h1>
+		</header>
+		<div id="connecting">Connecting to the server...</div>
+		<div id="review" style="display: none;">
+			<div id="review-title"></div>
+			<div id="review-stars"></div>
+			<div id="review-content"></div>
+		</div>
+		<div id="waitingroom" style="display: none;">
+			<h3>Please wait for the game to start...</h3>
+		</div>
+		<div class="buttonlover row">
+			<div class="span3 player">
+				<div id="player-Brian" class="name">Brian</div>
+				<div id="score-Brian" class="score"></div>
+			</div>
+			<div id="answering" class="span6">
+				<div class="btn-group" data-toggle="buttons-radio">
+					<button id="answer-1" class="btn">The Diamond Club</button><button id="answer-2" class="btn">50 Shades of Grey</button>
+				</div>
+				<button id="lockin" class="btn btn-primary">Lock in</button>
+				<div id="admin" style="display: none;">
+					<button id="admin-reveal" class="btn">Reveal</button>
+					<button id="admin-next" class="btn">Next</button>
+				</div>
+			</div>
+			<div class="span3 player">
+				<div id="player-Justin" class="name">Justin</div>
+				<div id="score-Justin" class="score"></div>
+			</div>
+		</div>
+	</div>
+    <div class="modal hide" id="login">
+		<div class="modal-header">
+			<h3>Hello</h3>
+		</div>
+		<div class="modal-body">
+			<h2>Host?</h2>
+			<p>Please enter the access code:</p>
+			<form class="form-horizontal">
+				<input type="text" id="accesscode" />
+				<button id="login-btn" class="btn btn-primary">Login</button>
+				<div id="login-error" style="display: none;">Invalid access code</div>
+			</form>
+			<hr />
+			<h2>Viewer?</h3>
+			<button id="watch" class="btn btn-primary">Watch and vote!</button>
+		</div>
+    </div>
+    <div class="modal hide" id="answers">
+    	<div class="modal-body">
+    		<div id="answers-1" style="display: none;">
+    			<h2>Host answers!</h2>
+	    		<div class="row-fluid">
+	    			<div class="span6">
+	    				<div class="answer" id="answer-Brian"></div>
+	    				<div class="answer-name">Brian</div>
+	    			</div>
+	    			<div class="span6">
+	    				<div class="answer" id="answer-Justin"></div>
+	    				<div class="answer-name">Justin</div>
+	    			</div>
+				</div>
+    		</div>
+			<div id="answers-2" style="display: none;">
+				<h2>Chatrealm's choice!</h2>
+	    		<div class="row-fluid">
+	    			<div class="span6">
+	    				<div class="answer" id="answer-chatrealm1"></div>
+	    				<div class="answer-name">The Diamond Club</div>
+	    			</div>
+	    			<div class="span6">
+	    				<div class="answer" id="answer-chatrealm2"></div>
+	    				<div class="answer-name">50 Shades of Grey</div>
+	    			</div>
+				</div>
+			</div>
+			<div id="answers-3" style="display: none;">
+				<h2>Correct answer!</h2>
+   				<div class="answer" id="answer-forreal"></div>
+			</div>
+		</div>
+    </div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+	<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/js/bootstrap.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
